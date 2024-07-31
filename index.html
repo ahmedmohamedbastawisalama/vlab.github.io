@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VLAB - Virtual Reality Experience</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .hero {
+            height: 100vh;
+            background: url('https://source.unsplash.com/1600x900/?virtual-reality') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero a {
+            background: #007bff;
+            color: white;
+            padding: 0.8rem 1.2rem;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .hero a:hover {
+            background: #0056b3;
+        }
+
+        .features {
+            padding: 4rem 2rem;
+            background: white;
+        }
+
+        .features h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .features .feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .features .feature img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 2rem;
+        }
+
+        .features .feature p {
+            flex: 1;
+            font-size: 1rem;
+        }
+
+        .contact {
+            padding: 4rem 2rem;
+            background: #007bff;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 2rem;
+        }
+
+        .contact a {
+            background: white;
+            color: #007bff;
+            padding: 0.8rem 1.2rem;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .contact a:hover {
+            background: #0056b3;
+            color: white;
+        }
+
+        footer {
+            padding: 1rem;
+            background: #333;
+            color: white;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .features .feature {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .features .feature img {
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Welcome to VLAB</h1>
+            <p>Experience the Future of Virtual Reality</p>
+            <a href="#features">Explore Features</a>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <h2>Features</h2>
+        <div class="feature">
+            <img src="https://source.unsplash.com/150x150/?technology" alt="Feature 1">
+            <p>Immersive VR experiences that transport you to another world.</p>
+        </div>
+        <div class="feature">
+            <img src="https://source.unsplash.com/150x150/?innovation" alt="Feature 2">
+            <p>Cutting-edge technology to deliver the best virtual reality experiences.</p>
+        </div>
+        <div class="feature">
+            <img src="https://source.unsplash.com/150x150/?future" alt="Feature 3">
+            <p>User-friendly interfaces designed for both beginners and experts.</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Get in Touch</h2>
+        <p>Contact us to learn more about VLAB and our offerings.</p>
+        <a href="mailto:info@vlab.com">Email Us</a>
+    </section>
+
+    <footer>
+        &copy; 2024 VLAB. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
